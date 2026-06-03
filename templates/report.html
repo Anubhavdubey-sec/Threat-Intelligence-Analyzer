@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Threat Report</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+
+</head>
+
+<body class="bg-dark text-light">
+
+<div class="container mt-5">
+
+<h1>Threat Intelligence Report</h1>
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="card bg-danger">
+
+<div class="card-body">
+
+<h4>Risk Score</h4>
+
+<h2>{{ score }}</h2>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card bg-warning">
+
+<div class="card-body">
+
+<h4>Severity</h4>
+
+<h2>{{ severity }}</h2>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="card bg-secondary">
+
+<div class="card-body">
+
+<h3>Summary</h3>
+
+<ul>
+<li>IPs: {{ ips_count }}</li>
+<li>Domains: {{ domains_count }}</li>
+<li>URLs: {{ urls_count }}</li>
+<li>Emails: {{ emails_count }}</li>
+<li>Hashes: {{ hashes_count }}</li>
+</ul>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="card bg-secondary">
+
+<div class="card-body">
+
+<h3>IP Addresses</h3>
+
+{% for ip in ips %}
+<p>{{ ip }}</p>
+{% endfor %}
+
+</div>
+
+</div>
+
+<br>
+
+<div class="card bg-secondary">
+
+<div class="card-body">
+
+<h3>Domains</h3>
+
+{% for domain in domains %}
+<p>{{ domain }}</p>
+{% endfor %}
+
+</div>
+
+</div>
+
+<br>
+
+<a href="/"
+class="btn btn-primary">
+
+Analyze Another PDF
+
+</a>
+
+<a href="/history"
+class="btn btn-success">
+
+History
+
+</a>
+
+</div>
+
+</body>
+
+</html>
