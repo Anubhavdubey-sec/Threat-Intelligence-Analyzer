@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Threat Intelligence Analyzer
 
 A Flask-based Threat Intelligence platform for analyzing PDF security reports.
@@ -26,3 +27,6 @@ A Flask-based Threat Intelligence platform for analyzing PDF security reports.
 ## Author
 
 Anubhav Dubey
+=======
+# Threat-Intelligence-Analyzer
+>>>>>>> e064211 (Initial commit)
